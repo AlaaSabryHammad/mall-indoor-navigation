@@ -1,0 +1,142 @@
+name: mall_indoor_navigation
+description: Professional indoor navigation system for retail stores with real-time pathfinding and offline-first architecture.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ============================================
+  # STATE MANAGEMENT
+  # ============================================
+  # Riverpod - Modern reactive state management with compile-time safety
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # ============================================
+  # LOCAL DATABASE (Offline-First)
+  # ============================================
+  # Drift - Type-safe SQL database with excellent performance for 1000+ products
+  # Better than Hive for complex queries, supports migrations
+  drift: ^2.22.0
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # ============================================
+  # NAVIGATION & ROUTING
+  # ============================================
+  # Go Router - Declarative routing with deep linking support
+  go_router: ^14.6.2
+
+  # ============================================
+  # MAP & GRAPHICS
+  # ============================================
+  # InteractiveViewer for zoom/pan is built-in Flutter
+  # CustomPaint for drawing paths
+  # For advanced custom map rendering:
+  flutter_map: ^7.0.2  # If we need more advanced features
+  latlong2: ^0.9.1     # Coordinate handling
+
+  # Vector graphics for smooth arrows
+  flutter_svg: ^2.0.10+1
+
+  # ============================================
+  # IMAGE HANDLING
+  # ============================================
+  # Image picker for admin uploading maps
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
+
+  # ============================================
+  # SEARCH & TEXT
+  # ============================================
+  # Fast fuzzy search for product names
+  fuzzy: ^0.5.1
+
+  # Voice search (optional but easy to add)
+  # speech_to_text: ^7.0.0  # Commented out - requires macOS 11+
+
+  # ============================================
+  # BARCODE SCANNING
+  # ============================================
+  mobile_scanner: ^5.2.3
+
+  # ============================================
+  # FUNCTIONAL PROGRAMMING
+  # ============================================
+  # Either type for error handling
+  dartz: ^0.10.1
+
+  # Immutable collections
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # ============================================
+  # UTILITIES
+  # ============================================
+  # UUID for generating unique IDs
+  uuid: ^4.5.1
+
+  # Intl for formatting
+  intl: ^0.19.0
+
+  # Equatable for value equality
+  equatable: ^2.0.7
+
+  # ============================================
+  # UI COMPONENTS
+  # ============================================
+  # Smooth animations
+  flutter_animate: ^4.5.0
+
+  # Shimmer loading
+  shimmer: ^3.0.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # ============================================
+  # SECURITY
+  # ============================================
+  # Encrypted storage for admin password
+  flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code generation
+  build_runner: ^2.4.13
+  drift_dev: ^2.22.0
+  riverpod_generator: ^2.6.2
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+
+  # Linting
+  flutter_lints: ^5.0.0
+
+  # Testing
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/maps/
+
+  # fonts:
+  #   - family: SF Pro
+  #     fonts:
+  #       - asset: fonts/SF-Pro-Display-Regular.ttf
+  #       - asset: fonts/SF-Pro-Display-Medium.ttf
+  #         weight: 500
+  #       - asset: fonts/SF-Pro-Display-Semibold.ttf
+  #         weight: 600
+  #       - asset: fonts/SF-Pro-Display-Bold.ttf
+  #         weight: 700
