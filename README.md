@@ -1,5 +1,11 @@
 # 🏬 Mall Indoor Navigation System
 
+[![Flutter](https://img.shields.io/badge/Flutter-3.5.0-blue.svg?logo=flutter)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.5.0-blue.svg?logo=dart)](https://dart.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android%20%7C%20macOS-lightgrey.svg)]()
+[![Architecture](https://img.shields.io/badge/Architecture-Clean-orange.svg)]()
+
 A production-grade Flutter mobile application for indoor navigation in large retail stores. Built with Clean Architecture, offline-first approach, and real-time pathfinding using A* algorithm.
 
 ---
